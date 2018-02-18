@@ -1,0 +1,102 @@
+<div class="text-center">
+  <h2 class="jumbotron">Employee Registration</h2>
+</div>
+<div class="row">
+  <div class="col-md-4">
+ <form id="formNewUser" name="formNewUser" #userData="ngForm" (ngSubmit)="userData.valid && addNewUser(userData.value)">
+  <div class="form-group">
+  <label>First Name:</label><input type="text" class="form-control" name="FirstName" id="FirstName" placeholder="First Name" maxlength="20" required [pattern]="textpattern" ngModel #FirstName="ngModel"></div>
+  <div *ngIf="FirstName.errors"> 
+    <div [hidden]="!(FirstName.errors.required) || FirstName.pristine" class="alert alert-danger"> 
+      FirstName required.
+    </div>		   
+    <div [hidden]="!(FirstName.errors.pattern)|| FirstName.pristine" class="alert alert-danger"> 
+      FirstName not valid.
+    </div>	
+    </div> 
+<div class="form-group">
+  <label>Last Name:</label><input type="text" class="form-control" name="LastName" id="LastName" placeholder="Last Name" maxlength="20" required [pattern]="textpattern" ngModel #LastName="ngModel"></div>
+  <div *ngIf="LastName.errors"> 
+    <div [hidden]="!(LastName.errors.required) || LastName.pristine" class="alert alert-danger"> 
+      FirstName required.
+    </div>		   
+    <div [hidden]="!(LastName.errors.pattern)|| LastName.pristine" class="alert alert-danger"> 
+      FirstName not valid.
+    </div>	
+    </div> 
+  
+  <div class="form-group">
+  <label>Qualification:</label>
+  <select class="form-control" name="Qualification" id="Qualification" ngModel>
+    <option value="B.Tech">B.Tech</option>
+    <option value="M.Tech">M.Tech</option>
+    <option value="MCA">MCA</option>
+    <option value="others">others</option>
+  </select>
+  <!-- <input type="text" class="form-control" name="Qualification" id="Qualification" placeholder="Qualification" ngModel> --></div>
+  <div class="form-group">
+  <label>Occupation:</label>
+  <select class="form-control" name="Occupation" id="Occupation" ngModel>
+    <option value="Software Engineer">Software Engineer</option>
+    <option value="Sr Software Engineer">Sr Software Engineer</option>
+    <option value="Technical Lead">Technical Lead</option>
+    <option value="Manager">Manager</option>
+    <option value="others">others</option>
+  </select>
+  <!--<input type="text" class="form-control" name="Occupation" id="Occupation" placeholder="Occupation" ngModel>--></div>
+  <div class="form-group">
+  <label>Industry working in:</label>
+  <select class="form-control" name="Industry" id="Industry" ngModel>
+    <option value="IT">IT</option>
+    <option value="Banking">Banking</option>
+    <option value="Health">Health</option>
+    <option value="Telecom">Telecom</option>
+  </select>
+  <!--<input type="text" class="form-control" name="Industry" id="Industry" placeholder="Industry" ngModel>--></div>
+  <div class="form-group">
+  <label>Firm that you are working:</label>
+  <select class="form-control" name="Firm" id="Firm" ngModel>
+    <option value="HCL">HCL</option>
+    <option value="TCS">TCS</option>
+    <option value="CTS">CTS</option>
+    <option value="INFOSYS">INFOSYS</option>
+  </select>
+  <!-- <input type="text" class="form-control" name="Firm" id="Firm" placeholder="Firm" ngModel>--></div>
+  <div class="form-group">
+  <label>Working Location:</label>
+  <select class="form-control" name="Workinglocation" id="Workinglocation" ngModel>
+    <option value="Chennai">Chennai</option>
+    <option value="Bengalore">Bengalore</option>
+    <option value="Hyderabad">Hyderabad</option>
+    <option value="Pune">Pune</option>
+    <option value="others">others</option>
+  </select>
+  <!-- <input type="text" name="Workinglocation" class="form-control" id="Workinglocation" placeholder="Working location" ngModel>--></div>
+  <div class="form-group">
+  <label>Personal EmailID:</label><input type="text" name="PersonalEmailID" class="form-control" id="PersonalEmailID" placeholder="Personal EmailID" required [pattern]="emailPattern" ngModel #perEmail="ngModel"></div>
+  <div *ngIf="perEmail.errors"> 
+    <div [hidden]="!(perEmail.errors.required) || perEmail.pristine" class="alert alert-danger"> 
+      Personal Email required.
+    </div>			   
+    <div [hidden]="!(perEmail.errors.pattern)|| perEmail.pristine" class="alert alert-danger"> 
+      Personal Email not valid.
+    </div>	
+ </div> 
+ 
+  <div class="form-group">
+  <label>Official EmailID:</label><input type="text" name="OfficialEmailID" class="form-control" id="OfficialEmailID" placeholder="Official EmailID" required [pattern]="emailPattern" ngModel #offEmail="ngModel"></div>
+  <div *ngIf="offEmail.errors"> 
+    <div [hidden]="!(offEmail.errors.required) || offEmail.pristine" class="alert alert-danger"> 
+        Official Email required.
+    </div>			   
+    <div [hidden]="!(offEmail.errors.pattern)|| offEmail.pristine" class="alert alert-danger"> 
+        Official Email not valid.
+    </div>	
+ </div> 
+  <input type="submit" class="btn btn-success" value="Register">
+</form>
+<br>
+<h3 *ngIf="isAdded">
+  {{conformationString}}
+</h3>
+</div></div>
