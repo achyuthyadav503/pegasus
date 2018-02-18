@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "FirstName": "achyuth",
+      "LastName": "yadav",
+      "Qualification": "B.Tech",
+      "Occupation": "Software engineer",
+      "Industry": "IT",
+      "Firm": "Networking",
+      "Workinglocation": "chennai",
+      "PersonalEmailID": "achyuthyadav503@gmail.com",
+      "OfficialEmailID": "achutananda.y@hcl.com"
+    },
+    {
+      "id": 2,
+      "FirstName": "anand",
+      "LastName": "yadav",
+      "Qualification": "B.Tech",
+      "Occupation": "Software engineer",
+      "Industry": "IT",
+      "Firm": "Networking",
+      "Workinglocation": "chennai",
+      "PersonalEmailID": "achyuthyadav503@gmail.com",
+      "OfficialEmailID": "achutananda.y@hcl.com"
+    },
+    {
+      "id": 3,
+      "FirstName": "kishan",
+      "LastName": "yadav",
+      "Qualification": "B.Tech",
+      "Occupation": "Software engineer",
+      "Industry": "IT",
+      "Firm": "Ecommerse",
+      "Workinglocation": "chennai",
+      "PersonalEmailID": "kishan.kishan0530@gmail.com",
+      "OfficialEmailID": "achutananda.y@hcl.com"
+    },
+    {
+      "FirstName": "hjjk",
+      "LastName": "hjk",
+      "Qualification": "B.Tech",
+      "Occupation": "Sr Software Engineer",
+      "Industry": "IT",
+      "Firm": "HCL",
+      "Workinglocation": "Chennai",
+      "PersonalEmailID": "bkbk@fdg.vom",
+      "OfficialEmailID": "hnhv@dfdg.com",
+      "id": 4
+    }
+  ]
+}
