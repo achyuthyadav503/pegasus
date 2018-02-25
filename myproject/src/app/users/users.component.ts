@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Http,Response,Headers}from '@angular/http';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-users',
@@ -8,7 +9,7 @@ import {Http,Response,Headers}from '@angular/http';
 })
 export class UsersComponent implements OnInit {
 
-  constructor(private http:Http) { }
+  constructor(private http:Http,private router: Router) { }
   conformationString:string="New User has been added";
   isAdded:boolean=false;
   userObj:object=[];
@@ -20,6 +21,8 @@ export class UsersComponent implements OnInit {
   }
   addNewUser=function (user) {
     this.userObj={
+      "username":user.UserName,
+      "password":user.PassWord,
       "FirstName": user.FirstName,
       "LastName": user.LastName,
       "Qualification": user.Qualification,
@@ -33,6 +36,7 @@ export class UsersComponent implements OnInit {
     this.http.post("http://localhost:5555/users",this.userObj).
     subscribe((res:Response)=>{
      this.isAdded=true;
+     this.router.navigateByUrl("/home");
     })
   }
 
