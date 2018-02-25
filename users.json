@@ -2,6 +2,8 @@
   "users": [
     {
       "id": 1,
+      "username": "achyuth",
+      "password": "abc",
       "FirstName": "achyuth",
       "LastName": "yadav",
       "Qualification": "B.Tech",
@@ -14,6 +16,8 @@
     },
     {
       "id": 2,
+      "username": "anand",
+      "password": "def",
       "FirstName": "anand",
       "LastName": "yadav",
       "Qualification": "B.Tech",
@@ -26,6 +30,8 @@
     },
     {
       "id": 3,
+      "username": "kishan",
+      "password": "abc",
       "FirstName": "kishan",
       "LastName": "yadav",
       "Qualification": "B.Tech",
@@ -37,6 +43,8 @@
       "OfficialEmailID": "achutananda.y@hcl.com"
     },
     {
+      "username": "hjjk",
+      "password": "abc",
       "FirstName": "hjjk",
       "LastName": "hjk",
       "Qualification": "B.Tech",
@@ -47,6 +55,34 @@
       "PersonalEmailID": "bkbk@fdg.vom",
       "OfficialEmailID": "hnhv@dfdg.com",
       "id": 4
+    },
+    {
+      "username": "new",
+      "password": "new",
+      "FirstName": "ghh",
+      "LastName": "hjk",
+      "Qualification": "M.Tech",
+      "Occupation": "Software Engineer",
+      "Industry": "Banking",
+      "Firm": "TCS",
+      "Workinglocation": "Chennai",
+      "PersonalEmailID": "jkhjk@dsf.com",
+      "OfficialEmailID": "jkhjk@dsf.com",
+      "id": 5
+    },
+    {
+      "username": "hgk",
+      "password": "hkhk",
+      "FirstName": "hgkh",
+      "LastName": "kjk",
+      "Qualification": "M.Tech",
+      "Occupation": "Software Engineer",
+      "Industry": "IT",
+      "Firm": "TCS",
+      "Workinglocation": "Pune",
+      "PersonalEmailID": "asda@fdg.com",
+      "OfficialEmailID": "asda@fdg.com",
+      "id": 6
     }
   ]
 }
